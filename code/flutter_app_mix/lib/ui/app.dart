@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../domain/controllers/authentication_controller.dart';
 import '../domain/controllers/message_controller.dart';
+import '../domain/controllers/person_controller.dart';
 import 'firebase_central.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     // Inyectar los controladores en el proyecto
     Get.put(AuthenticationController());
     Get.put(MessageController());
+    Get.put(PersonController());
 
     return GetMaterialApp(
       title: 'Flutter Demo',
